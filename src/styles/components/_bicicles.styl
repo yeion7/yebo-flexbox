@@ -1,0 +1,66 @@
+.bicicles
+    width 100vw
+    display flex
+    flex-direction column
+    
+.container
+    display flex
+    flex-direction column
+    width 100vw
+    overflow hidden
+    @media screen and (min-width: 1001px)
+        height 90vh
+        flex-direction row
+
+    &-left
+        flex 1 1 60%
+        display flex       
+        justify-content flex-start
+        overflow hidden
+        & img
+            flex auto
+
+    &-right
+        flex 1 1 40%
+        display flex
+        flex-direction column
+        justify-content: flex-start
+        align-items: flex-start
+       
+        &-text
+            flex 1 1 70%
+            display flex
+            flex-direction column
+            justify-content: center
+            align-items: center
+            background white
+
+            @media screen and (max-width: 1001px)
+                padding 100px 0
+            
+        &-seat
+            align-self stretch
+            
+    &-middle
+        display flex
+        flex-direction column
+        justify-content: space-between
+        align-items space-around
+        
+        &-text
+            flex 1 1 70%
+            display flex
+            flex-direction column
+            justify-content: center
+            align-items center
+            @media screen and (max-width: 1001px)
+                margin 100px 0
+
+.reverse
+    @media screen and (min-width: 1001px)
+        height 90vh
+        flex-direction row-reverse
+
+.order
+   @media screen and (max-width: 1001px)
+        order 1
