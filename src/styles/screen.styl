@@ -1,3 +1,4 @@
+
 @import 'base/variables';
 
 @import 'base/normalize';
@@ -7,6 +8,7 @@
 @import 'components/_header';
 @import 'components/_intro';
 @import 'components/_bicicles';
+@import 'components/_twitter';
 // Import Layouts
 // @import 'layouts/home';
 
@@ -14,4 +16,64 @@
 // @import 'plugins/plugin';
 
 
+.product
+    display flex
+    justify-content space-around
+    width 100vw
+    height 100%
+    @media screen and (max-width: 1001px)
+        flex-direction column
+        height 100%
+ 
+    &-left
+        flex 1 1 30%
+        height 100%
+        display flex
+        flex-direction column
+        justify-content flex-start
         
+        &-top
+            flex 1 1 50%
+            display flex
+            justify-content space-between
+            &-img1
+                flex 1 1 50%
+                background-size auto auto
+                
+            &-img2
+                flex 1 1 50%
+                background-size auto auto
+        &-bottom
+            flex 1 1 50%
+            display flex
+            &-img3
+                flex 1 1 50%
+        
+    &-middle
+        flex 1 1 40%
+        height 100%
+        display flex
+        align-items stretch
+        &-left
+            flex 1 1 50%
+        &-right
+            flex 1 1 50%
+        
+    &-right
+        flex 1 1 30%
+        height 100%
+        display flex
+        flex-direction column
+        &-top
+            flex 1 1 50%
+            display flex
+            &-img5
+                flex 1 1 100%
+        &-bottom
+            flex 1 1 50%
+            display flex
+            &-img2
+                flex 1 1 50%
+            &-img3
+                flex 1 1 50%
+
